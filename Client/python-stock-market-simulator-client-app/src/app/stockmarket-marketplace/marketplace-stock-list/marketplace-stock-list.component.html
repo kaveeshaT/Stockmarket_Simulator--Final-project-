@@ -1,0 +1,25 @@
+<div class="table-con con">
+    <div class="table-scroll">
+    <table class="stock-table">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Old Price(Rs)</th>
+                <th>Current Price(Rs)</th>
+                <th>invested Stocks</th>
+                <th>Profit(Rs)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of Buystocks">
+                <td>{{getStockCurrentPrice(item.stockId).DisplayName}}</td>
+                <td>{{item.totalPrice/item.stockAmount | number : '1.2-2'}}</td>
+                <td>{{getStockCurrentPrice(item.stockId).Price | number : '1.2-2'}}</td>
+                <td>{{item.stockAmount}}</td>
+                <td>{{getStockCurrentPrice(item.stockId).Price*item.stockAmount-item.totalPrice | number : '1.2-2'}}</td>
+            </tr>
+ 
+        </tbody>
+    </table>
+</div>
+</div>

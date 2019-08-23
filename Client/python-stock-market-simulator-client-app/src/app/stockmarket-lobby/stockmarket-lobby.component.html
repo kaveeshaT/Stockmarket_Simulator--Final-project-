@@ -1,0 +1,20 @@
+<app-stockmarket-logout></app-stockmarket-logout>
+<div class="main-con">
+        <div class="heading-con">
+                <p>Waiting for players</p>
+        </div>
+        <div class="match-con con">
+        <div class="main-item-con">
+            <div  *ngFor="let player of players" class="match-items con ">
+                        
+                        <div class="match-players col-12">{{player.name}} </div>
+                        
+            </div>
+          
+                
+
+       </div> 
+
+       <a routerLink="/marketplace" class="trade-button">Stop Waiting</a>
+</div>
+</div>

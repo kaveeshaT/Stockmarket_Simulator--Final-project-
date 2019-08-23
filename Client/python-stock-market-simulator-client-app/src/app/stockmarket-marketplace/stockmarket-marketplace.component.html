@@ -1,0 +1,30 @@
+<div class="container">
+
+                
+        
+        <div class="row nav">
+                <div class="col-12">
+                        <app-marketplace-header [turn]="turn" [timer]="time"></app-marketplace-header>
+                </div>
+                
+        </div>
+        <app-marketplace-buy-sell [stocks]="stocks" *ngIf="buySell" (closePop)="OpenBuySell()"></app-marketplace-buy-sell>
+   <div class="row">
+        <div class="col-8 chart-con">
+                <app-marketplace-stock-graph [stocks]="stocksList"></app-marketplace-stock-graph>
+        </div>
+        <div class="col-4">
+                <app-marketplace-company-list [stocks]="stocks"></app-marketplace-company-list>
+        </div>
+      
+   </div>
+   <div class="row">
+        <div class="bla col-8">
+                <app-marketplace-stock-list [stocks]="stocks" [Buystocks]="stocksOwn"></app-marketplace-stock-list>
+        </div>
+        <div class="col-4">
+                <app-marketplace-user-operations [accountBalance]="accountBalance" (TradeEvent)="OpenBuySell()"></app-marketplace-user-operations>
+        </div>
+   </div>
+   
+</div>

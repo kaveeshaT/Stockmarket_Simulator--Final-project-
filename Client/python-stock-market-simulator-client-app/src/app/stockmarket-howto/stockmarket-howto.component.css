@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+.form-con, .form-items, form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.close-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8%;
+    padding-top: 5%;
+    color:#660099;
+    font-size: 3vw;
+    width: 100%;
+}
+
+.heading-con{
+	color: #ea5455;
+	font-size: 2.5vw;
+	font-weight: 600;
+	margin-top: -5%;
+	
+}
+
+.buy-sell-con{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 200;
+    right: 0;
+    top: 0;
+}
+
+form{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.form-con{
+	background-color: white;
+    width: 50%;
+    height: 80%;
+    
+    justify-content: center;
+}
+
+.form-items{
+	width: 100%;
+    padding: 10px 0 10px 0;
+    
+}
+
+.btn-con{
+	flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+.trade-button{
+    font-size: 1.5vw;
+    width: 200px;
+    padding: 10%;
+}
+
+.fields{
+    width: 50%;
+    padding-left: 1%;
+    border: 3px solid #660099;
+    border-radius: 10px;
+    height: 2.5vw;
+    font-size: 1.3vw;
+    color: rgb(124, 124, 124);
+}
+
+.text-con{
+    font-size: 1.5vw;
+    font-weight: 550;
+    color:  #660099;
+   
+}
+
+.para-con{
+    height: 100%;
+    width: 100%;
+    padding: 0 10% 0 10%;
+    overflow: scroll;
+    
+}

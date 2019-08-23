@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="gamebackend">
+    <output-path>$PROJECT_DIR$/out/artifacts/gamebackend</output-path>
+    <root id="archive" name="gamebackend.war" />
+  </artifact>
+</component>

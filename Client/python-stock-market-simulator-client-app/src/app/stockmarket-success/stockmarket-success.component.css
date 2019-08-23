@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+.heading-con{
+	color: #f07b3f;
+	font-size: 3vw;
+	font-weight: 600;
+	
+	
+}
+.con, .main-con{
+	display: flex;
+	
+	justify-content: center;
+    align-items: center;
+    
+}
+
+.main-con{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+
+
+.match-con, .main-item-con{
+ 
+	display: flex;
+	padding-left: 3%;
+	padding-right:3%;
+	flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+  padding: 2%;
+	background-color: white;
+}
+
+.match-con{
+  width: 55%;
+  height: 65%;
+}
+.main-item-con{
+width: 100%;
+  height: 70%;
+ 
+  justify-content: space-around;
+}
+
+
+.match-items{
+  	
+	justify-content: space-between;
+  	width: 80%;
+  	height: 10%;
+  	padding: 2%;
+	font-size: 1vw;
+	font-weight: 600;
+	
+	background-color:white;
+	color: #f07b3f;
+	border: 3px solid #f07b3f;
+}
+
+.trade-button{
+	padding: 1%;
+	font-size: 1.5vw;
+	width: 22%;
+	border: 2px solid #f07b3f;
+}
+
+.winner{
+	background-color:#ea5455;
+	color: white;
+}

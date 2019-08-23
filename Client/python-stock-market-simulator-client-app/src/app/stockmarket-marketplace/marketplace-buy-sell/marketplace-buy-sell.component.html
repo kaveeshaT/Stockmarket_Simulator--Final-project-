@@ -1,0 +1,37 @@
+<div class="buy-sell-con col-12">
+  <div class="form-con con ">
+
+    <div (click)="CloseWindow()" class="close-btn">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="heading-con">
+      <p>Buy & Sell</p>
+    </div>
+    <form>
+      <div class="form-items">
+        <select name="company" #companyToSelect="ngModel" [(ngModel)]="Companies" class="fields">
+          <option *ngFor="let item of tempStock" [ngValue]="item">{{item.DisplayName}}</option>
+        </select>
+      </div>
+      <div class="form-items">
+        <div class="text-con">Price of a stock(Rs)</div>
+        <div class="text-con">{{Companies.Price | number : '1.2-2'}}</div>
+      </div>
+      <div class="form-items">
+        <input type="number" name="StockAmount" [(ngModel)]="stockAmount"  #StockAmount="ngModel" class="fields" placeholder="No of stocks">
+      </div>
+      <div class="form-items">
+        <div class="text-con">Total amount(Rs)</div>
+        <div class="text-con">{{stockAmount * Companies.Price | number : '1.2-2'}}</div>
+      </div>
+      <div class="form-items btn-con">
+        <div class="text-con">
+          <button class="trade-button" (click)="buy()">Buy</button>
+        </div>
+        <div class="text-con">
+          <button class="trade-button" (click)="sell()">Sell</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

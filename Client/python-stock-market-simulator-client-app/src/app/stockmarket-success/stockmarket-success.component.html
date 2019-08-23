@@ -1,0 +1,19 @@
+<app-stockmarket-logout></app-stockmarket-logout>
+<div class="main-con">
+        <div class="heading-con">
+                <p>{{status}}</p>
+        </div>
+        <div class="match-con con">
+        <div class="main-item-con">
+            <div *ngFor="let item of gameRoomPlayers"  class="match-items con winner">
+                        <div class="match-name">Rank 1</div>
+                        <div class="match-players">{{item.name}} </div>
+                        <div class="match-players">{{item.remainigMoney}} </div>
+            </div>
+                
+
+       </div> 
+
+       <a routerLink="/menu" class="trade-button">Main Menu</a>
+</div>
+</div>

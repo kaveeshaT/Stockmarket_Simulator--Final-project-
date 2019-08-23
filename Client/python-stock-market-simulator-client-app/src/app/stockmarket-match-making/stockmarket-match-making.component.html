@@ -1,0 +1,20 @@
+<app-stockmarket-logout></app-stockmarket-logout>
+<div class="main-con">
+  <div class="heading-con">
+    <p>Start Game</p>
+  </div>
+  <div class="match-con con">
+    <div class="main-item-con">
+      <div *ngFor="let item of gameRooms" class="match-items con">
+        <div class="match-players">Match: {{item.name}} </div>
+        <div class="match-name">{{item.players.filter(getPositive).length}}</div>
+        <button type="button" (click)="joinARoom(item)" class="join trade-button"> Join</button>
+      </div>
+
+    </div>
+    <div class="create-con">
+      <input type="text" class="fields" name="CreateRoom" [(ngModel)]="createRoom"  #CreateRoom="ngModel" placeholder="CreateRoom" required>
+      <button type="button" class="trade-button" (click)="createARoom()">Create</button>
+    </div>
+  </div>
+</div>

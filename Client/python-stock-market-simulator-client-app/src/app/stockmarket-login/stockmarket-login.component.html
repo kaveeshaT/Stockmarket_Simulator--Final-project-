@@ -1,0 +1,32 @@
+<div id="login" >
+    <h1 class="header1">Stock Market Simulator</h1>
+    <div class="container">
+    <div id="login-row" class="row justify-content-center align-items-center" class="col-md-12">
+         
+    <div id="login-column" class="col-md-12">
+                <div id="login-box" class="col-md-12">
+                    <form #LoginForm="ngForm" novalidate >
+                            <!-- id="login-form" class="form" action="" method="post" -->
+                        <h2 class="header2">Welcome !</h2><br>
+
+                        <div class="form-group">
+                            
+                            <input type="text" name="Loginusername" [(ngModel)]="userName"  #Loginusername="ngModel" class="username" placeholder="Username" required>
+                        </div><br>
+                       
+                        <div class="form-group">
+                            
+                            <a (click)=onSubmit(LoginForm)><input type="submit" name="submit" class="SignIn" value="Sign In"></a>
+                        </div><br>
+                     
+
+
+                    </form>
+                </div>
+            </div>
+       
+        </div>
+    </div>
+</div>
+
+
